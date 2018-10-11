@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu Oct 11 00:05:43 MST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0166-61f2-053b-00000abab080 
+on database directory /home/eldo/IdeaProjects/TwitterAnalysis/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@ce9b9a9 
+Loaded from file:/home/eldo/.ivy2/cache/org.apache.derby/derby/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-8u181-b13-0ubuntu0.16.04.1-b13
+user.dir=/home/eldo/IdeaProjects/TwitterAnalysis
+os.name=Linux
+os.arch=amd64
+os.version=4.15.0-36-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

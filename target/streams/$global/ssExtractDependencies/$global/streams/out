@@ -1,0 +1,1 @@
+[error] sbt.librarymanagement.ResolveException: unresolved dependency: org.apache.hadoop#hadoop-core;0.20-append-r1056497: not found

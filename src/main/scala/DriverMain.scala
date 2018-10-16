@@ -26,9 +26,13 @@ object DriverMain {
       .setOAuthAccessTokenSecret(accessTokenSecret)
     val auth = new OAuthAuthorization(cb.build)
     val hashtags = hashtagsDS.collect()
-    val tweets = TwitterUtils.createStream(ssc, Some(auth), List.empty[String])
     val producerConf = KafkaWrapper.producerConfig
     val kafkaProd = conf.broadcast(KafkaWrapper(producerConf))
+//    for(i <- 1 to 10) {
+//      kafkaProd.value.send(Constants.topicName, hashtags(i))
+//      Thread.sleep(5000)
+//    }
+    val tweets = TwitterUtils.createStream(ssc, Some(auth), List.empty[String])
     tweets.foreachRDD( rdd => {
       val save = rdd.filter(status =>
           status.getLang.equals("en")
